@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Justin Schultz</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+	<script src="./javascript/jquery-2.1.3.js"></script>
+</head>
+<body>
+	<figure class="parallax"></figure>
+	<div id="content">
+		<header class="header">
+
+			<h1 class="name">Justin Schultz</h1>
+			<h2 class="job-title">Web Developer Specializing in Rails and Javascript.</h2>
+
+			<ul class="social-icons group">
+				
+			</ul>
+
+		</header>
+		<article class="main">
+			<section class="summary">
+				<h1 class="summary-title">About Me</h1>
+				<figure class="summary-image">
+					<img src="./images/justin.jpg">
+				</figure>
+				<p class="summary-paragraph">
+					I love to code. Ever since I learned about the power of programming its envelopped my interests.
+					Coding is an extension of what makes me happy: to immerse other people into something I created.
+					Lately I specialize in web development with Ruby on Rails and Backbone.js.
+				</p>
+			</section>
+			<section class="projects">
+				<h1 class="projects-title">Projects</h1>
+				<ul class="projects-list group">
+					<li class="project"><a href="http://www.vapourgames.com" class="project-link">
+						<div class="gloss-effect"></div>
+						<figure class="project-figure"><img src="./images/vapour-portfolio.png"></figure>
+						<h2 class="project-title">Vapour</h2>
+					</a></li>
+				</ul>
+			</section>
+			<section class="contact">
+				<h1 class="contact-title">Contact</h1>
+
+			</section>
+		</article>
+		<footer class="footer">
+			
+		</footer>
+	</div>
+	<script>
+	$(document).ready(function() {
+		$(window).bind('scroll', function(event) {
+			var $target = $(event.currentTarget);
+			var scrolledY = $target.scrollTop();
+			$('.parallax').css('background-position', 'center -'+(scrolledY * 0.2)+'px');
+		});
+	})
+	</script>
+</body>
+</html>

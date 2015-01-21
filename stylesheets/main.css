@@ -1,0 +1,176 @@
+/* Reset */
+
+html, body, div, header, h1, h2, a, img, figure,
+ul, li, p, article, section, img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	font-weight: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	color: inherit;
+	outline: inherit;
+	background: transparent;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Clear Fix */
+
+.group:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Body */
+
+body {
+	font-family: "Droid Serif";
+}
+
+.parallax {
+	background: url(../images/outer-hebrides.jpg) top center no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/* Header */
+
+.header {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 300px;
+	color: #fff;
+	width: 500px;
+	text-align: center;
+	position: relative;
+}
+
+.name {
+	font-size: 48px;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px #000;
+}
+
+.name:after {
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(255,255,255, 0) 10%, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 90%);
+	box-shadow: 2px 2px #000;
+}
+
+.job-title {
+	font-size: 20px;
+}
+
+/* Main */
+
+.main {
+	width: 800px;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: rgba(200,200,200,0.3);
+}
+
+section {
+	position: relative;
+	margin-bottom: 50px;
+	box-shadow: 2px 2px 8px #000;
+	/*background-color: #fff;*/
+	background: linear-gradient(to top right, rgb(220,220,220), rgb(255, 255, 255));
+	border-radius: 20px;
+	padding: 20px;
+}
+
+section h1:after {
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%);
+}
+
+section h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.summary-image {
+	width: 200px;
+	margin: 10px auto;
+	border-radius: 50%;
+	border: 1px solid #333;
+	overflow: hidden;
+}
+
+.summary-paragraph {
+	width: 300px;
+	margin: 10px auto;
+	text-align: center;
+	color: #777;
+}
+
+.projects {
+
+}
+
+.project {
+	width: 200px;
+	border: 2px solid #888;
+	padding: 5px;
+	color: #fff;
+	background: #222;
+	float: left;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 0 0 #000;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-transition: box-shadow 0.14s, left 0.14s, top 0.14s;
+}
+
+.gloss-effect {
+	position: absolute;
+	display: block;
+	background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 33%);
+	left: -100px;
+	right: -100px;
+	height: 150px;
+	top: -100px;
+	content: "";
+	border-radius: 50%;
+	opacity: 0.6;
+	-webkit-transition: opacity 1s;
+}
+
+.project:hover {
+	left: -2px;
+	top: -2px;
+	box-shadow: 2px 2px 2px #000;
+}
+
+.project:hover .gloss-effect {
+	opacity: 0.8;
+}
