@@ -5,6 +5,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
 	<script src="./javascript/jquery-2.1.3.js"></script>
+	<script src="./javascript/jquery.mousewheel.js"></script>
+	<script src="./javascript/jquery.simplr.smoothscroll.js"></script>
+	<script src="./javascript/on-load-script.js"></script>
 </head>
 <body>
 	<figure class="parallax"></figure>
@@ -19,8 +22,13 @@
 			</ul>
 
 		</header>
+		<ul class="nav-bar group">
+				<li class="nav-bar-item"><a href="#About_Me_Id" class="nav-link">About Me</a></li>
+				<li class="nav-bar-item"><a href="#Projects_Id" class="nav-link">Projects</a></li>
+				<li class="nav-bar-item"><a href="#Contact_Id" class="nav-link">Contact</a></li>
+			</ul>
 		<article class="main">
-			<section class="summary">
+			<section class="summary" id="About_Me_Id">
 				<h1 class="summary-title">About Me</h1>
 				<figure class="summary-image">
 					<img src="./images/justin.jpg">
@@ -31,7 +39,7 @@
 					Lately I specialize in web development with Ruby on Rails and Backbone.js.
 				</p>
 			</section>
-			<section class="projects">
+			<section class="projects" id="Projects_Id">
 				<h1 class="projects-title">Projects</h1>
 				<ul class="projects-list group">
 					<li class="project"><a href="http://www.vapourgames.com" class="project-link">
@@ -39,25 +47,37 @@
 						<figure class="project-figure"><img src="./images/vapour-portfolio.png"></figure>
 						<h2 class="project-title">Vapour</h2>
 					</a></li>
+					<li class="project"><a href="http://jussch.github.io/Asteroids/" class="project-link">
+						<div class="gloss-effect"></div>
+						<figure class="project-figure"><img src="./images/asteroids-portfolio.png"></figure>
+						<h2 class="project-title">Asteroids</h2>
+					</a></li>
 				</ul>
 			</section>
-			<section class="contact">
+			<section class="contact" id="Contact_Id">
 				<h1 class="contact-title">Contact</h1>
 
+				<ul class="contacts-list">
+					<li class="contact-item group">
+						<strong class="contact-type">Phone:</strong> 
+						<strong class="contact-info">(780) 416-1426</strong>
+					</li>
+					<li class="contact-item group">
+						<strong class="contact-type">Address:</strong> 
+						<strong class="contact-info">78 Regal Court, Sherwood Park</strong>
+						<br>
+						<strong class="contact-info">Alberta, CA, T8A5X8</strong>
+					</li>
+					<li class="contact-item group">
+						<strong class="contact-type">Email:</strong> 
+						<strong class="contact-info">jaschultz25@gmail.com</strong>
+					</li>
+				</ul>
 			</section>
 		</article>
 		<footer class="footer">
 			
 		</footer>
 	</div>
-	<script>
-	$(document).ready(function() {
-		$(window).bind('scroll', function(event) {
-			var $target = $(event.currentTarget);
-			var scrolledY = $target.scrollTop();
-			$('.parallax').css('background-position', 'center -'+(scrolledY * 0.2)+'px');
-		});
-	})
-	</script>
 </body>
 </html>
