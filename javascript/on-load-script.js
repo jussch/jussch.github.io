@@ -12,10 +12,4 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop:target}, 500);
 		event.preventDefault();
 	});
-	$.srSmoothscroll({
-      // defaults
-      step: 100,
-      speed: 200,
-      ease: 'swing'
-  });
 })
