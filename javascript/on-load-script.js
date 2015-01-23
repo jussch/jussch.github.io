@@ -14,8 +14,8 @@ $(document).ready(function() {
 	});
 	$.srSmoothscroll({
       // defaults
-      step: 55,
-      speed: 100,
+      step: 100,
+      speed: 200,
       ease: 'swing'
   });
 })
