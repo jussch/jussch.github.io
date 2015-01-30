@@ -157,7 +157,7 @@ section, .nav-bar {
 	color: #111;
 }
 
-.nav-bar-item:hover:after {
+.nav-bar-item:after {
 	display: block;
 	position: absolute;
 	content: "";
@@ -165,11 +165,14 @@ section, .nav-bar {
 	left: 0;
 	right: 0;
 	background: #000;
-	-webkit-animation: growLine 1s ease both;
+	transition: transform 1s, opacity 1s;
+	transform: scaleX(0);
+	opacity: 0.3;
 }
 
-@-webkit-keyframes growLine {
-	from {transform: scale(0);}
+.nav-bar-item:hover:after {
+	transform: scaleX(1);
+	opacity: 1;
 }
 
 section h1:after {
