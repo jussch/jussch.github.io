@@ -220,7 +220,7 @@ section h1 {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	-webkit-transition: box-shadow 0.2s, left 0.2s, top 0.2s, background 1s;
+	-webkit-transition: box-shadow 0.3s, left 0.3s, top 0.3s, background 1s;
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
@@ -265,9 +265,9 @@ section h1 {
 }
 
 .project:hover {
-	left: -3px;
-	top: -3px;
-	box-shadow: 3px 3px 3px #000;
+	left: -5px;
+	top: -5px;
+	box-shadow: 5px 5px 5px #000;
 	background: #333;
 }
 
@@ -290,6 +290,29 @@ section h1 {
 
 .project-title {
 	text-shadow: 1px 1px #123;
+	padding: 5px;
+}
+
+.github-project-link {
+	display: block;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	background: #41BA09;
+	border: 1px solid #328F07;
+	z-index: 9;
+	transition: bottom 0.5s;
+}
+
+.project:hover .github-project-link {
+	bottom: -18px;
+}
+
+.project .github-project-link:hover {
+	background: #4AD40B;
+	bottom: 0;
 }
 
 .skills-list {
@@ -304,6 +327,11 @@ section h1 {
 .skill-icon {
 	width: 100px;
 	margin-right: 20px;
+	transition: transform 0.2s;
+}
+
+.skill-icon:hover {
+	transform: scale(1.05);
 }
 
 .skill-icon:nth-child(5n) {
