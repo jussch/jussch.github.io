@@ -35,10 +35,11 @@ ul {
 
 body {
 	font-family: "Droid Serif";
+	background: linear-gradient(to left bottom, #455A64, #263238);
 }
 
 .parallax {
-	background: url(../images/outer-hebrides.jpg) top center no-repeat;
+	/*background: url(../images/outer-hebrides.jpg) top center no-repeat;*/
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -56,7 +57,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	color: #fff;
 	width: 500px;
 	text-align: center;
