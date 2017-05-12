@@ -35,6 +35,7 @@ ul {
 
 body {
 	font-family: "Droid Serif";
+	background: -webkit-linear-gradient(right top, #455A64, #263238);
 	background: linear-gradient(to left bottom, #455A64, #263238);
 }
 
